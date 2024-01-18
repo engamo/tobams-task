@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+
+# TypeScript
+*.js
+*.js.map
+*.tsbuildinfo
+
+# Compiled JavaScript
+dist/
+
+# Environment variables
+.env
+
+# Editor and IDE files
+.vscode/
+.idea/
+
+# Dependency lock files
+yarn.lock
+package-lock.json
