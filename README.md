@@ -21,7 +21,7 @@ Make sure you have the following installed on your machine:
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/tobams-task.git
+   git clone https://github.com/engamo/tobams-task.git
    ```
 
 2. Navigate to the project directory:
@@ -85,7 +85,7 @@ Make sure you have the following installed on your machine:
 - **Error Response:**
   ```json
   {
-    "error": "Error message here."
+    "error": "Invalid file type. Only JPG, PNG, and GIF are allowed."
   }
   ```
 
@@ -99,7 +99,7 @@ Make sure you have the following installed on your machine:
 - **Error Response:**
   ```json
   {
-    "error": "Error message here."
+    "error": "Image not found"
   }
   ```
 ```
