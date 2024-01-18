@@ -1,6 +1,7 @@
 import express from 'express';
-import mongoose from 'mongoose';
+import colors from 'colors';
 import dotenv from 'dotenv';
+import connectDB from './config/db';
 import imageRoutes from './routes/imageRoutes';
 
 dotenv.config();
@@ -8,14 +9,11 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+connectDB(); 
+
 app.use(express.json());
 app.use('/api/images', imageRoutes);
 
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/imageUploadDB', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(colors.green(`Server is running on http://localhost:${PORT}`));
 });

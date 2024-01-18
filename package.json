@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "ts-node src/app.ts",
+    "dev": "nodemon --exec ts-node src/app.ts"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +22,7 @@
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
+    "colors": "^1.4.0",
     "nodemon": "^3.0.3"
   }
 }
